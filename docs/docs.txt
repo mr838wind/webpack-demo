@@ -1,0 +1,37 @@
+## npm commands
+npm init -y
+npm install --save-dev webpack
+npm install --global webpack
+
+npm install --save lodash
+
+/* npm install을 하면 package.json에 저장된 모든 module들을 install한다. */
+npm install
+
+/* build */
+npm run build
+npm run build-p
+
+/* watch */
+npm run watch
+npm run watch-p 
+
+
+## webpack plugins
+uglifyjs-webpack-plugin:  a minifier that supports dead code removal
+clean-webpack-plugin: clean dist folder
+html-webpack-plugin:  simplifies creation of HTML files to serve your webpack bundles, for eg: /dist/index.html
+webpack.optimize.CommonsChunkPlugin: extract common dependencies into an existing entry chunk.
+
+
+## for develop
+devtool: 'inline-source-map',
+npm run watch
+
+
+## using jquery 
+npm install --save jquery
+
+
+
+
