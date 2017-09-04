@@ -1,0 +1,75 @@
+
+	• JavaScript 모듈화 도구
+		webpack은 모듈 시스템을 구성하는 기능 외에도 로더 사용, 빠른 컴파일 속도 등 장점이 많습니다
+		JavaScript 모듈화 명세를 만드는 대표적인 작업 그룹에 CommonJS와 AMD(Asynchronous Module Definition)가 있다.
+		webpack은 두 그룹의 명세를 모두 지원하는 JavaScript 모듈화 도구다.
+
+
+	• node tools
+		nodeclipse  >> node js eclipse plugin
+			node 쓰기에 좋음 
+		eclipse terminal
+
+	• webpack_demo 
+		https://github.com/mr838wind/webpack-demo
+		 webpack 관련 demo
+
+
+	• step by step from 0:
+		https://webpack.js.org/guides/getting-started/
+
+
+	• step by step from demo:
+		1. install node js
+		   개발환경: nodeclipse plugin 쓰면 편할것 같음
+		
+		2. clone webpack-demo
+		
+		3. 구조 및 기본 개념
+		
+		>> package.json -- node js
+		>> webpack.common.js -- webpack 
+		>> src -- source
+		>> dist --  webpack output, what we use in html, jsp
+		>> node_modules -- node js가 쓰는 module 
+		
+		<< 개념: >>
+		https://webpack.js.org/concepts/
+		Entry:   starting point dependency graph.
+		Output:  output file bundle.js
+		loaders: for css,html,jpg file, transform them into modules.
+		pluginds: perform action, custom functionality on "compilations"
+		
+		4. update npm module 
+		  npm install 
+		  npm update
+		
+		5. build webpack
+		npm run build
+		npm run build-p
+		npm run watch
+		npm run watch-p
+		
+		6. 개발
+		
+		<< js module >>
+		1). index.js 추가
+		
+		2).webpack.common.js 
+		entry 추가: index.js
+		
+		3). module 
+		https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/export
+		>>  one
+		export default function(){ ... }; 
+		import myFunc from 'myModule';
+		>>  one or multi
+		export {func1,func2};
+		import {func1} from myModule;
+		
+		>>외부 module import
+		npm install --save lodash
+		npm install --save-dev clean-webpack-plugin 
+		package.json에서
+		--save-dev는 devDependencies에 추가: 개발때만 사용, product에서는 빠짐.
+		--save는 dependencies에 추가: all
