@@ -8,6 +8,18 @@ module.exports = {
 	app: './src/index.js',
 	print: './src/print.js'
   },
+  module: {
+    rules: [
+      {
+        test: /\.tsx?$/,
+        use: 'ts-loader',
+        exclude: /node_modules/
+      }
+    ]
+  },
+  resolve: {
+    extensions: [ ".tsx", ".ts", ".js" ]
+  },
   plugins: [
     new CleanWebpackPlugin(['dist']),
     new HtmlWebpackPlugin({

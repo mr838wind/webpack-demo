@@ -1,5 +1,6 @@
 import _ from 'lodash';
 import printMe from './print.js';
+import greeter from './greeter.ts';
 
 
 function init() {
@@ -18,8 +19,14 @@ function init() {
 	  return div$;
 }
 
+function testTypeScript() {
+	var user = 'miky mouse';
+	console.log(greeter(user)); 
+}
+
 $(function(){
 	init();
+	testTs();
 });
 
 export default 'index';
