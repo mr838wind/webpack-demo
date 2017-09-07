@@ -20,7 +20,6 @@
 
 	• step by step from demo:
 		1. install node js
-		   개발환경: nodeclipse plugin 쓰면 편할것 같음
 		
 		2. clone webpack-demo
 		
