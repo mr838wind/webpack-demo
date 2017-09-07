@@ -26,7 +26,7 @@ function testTypeScript() {
 
 $(function(){
 	init();
-	testTs();
+	testTypeScript();
 });
 
 export default 'index';
