@@ -5,9 +5,8 @@
 		webpack은 두 그룹의 명세를 모두 지원하는 JavaScript 모듈화 도구다.
 
 
-	• node tools
-		nodeclipse  >> node js eclipse plugin
-			node 쓰기에 좋음 
+	• plugin
+		use webclipse or typescript plugin
 		eclipse terminal
 
 	• webpack_demo 
