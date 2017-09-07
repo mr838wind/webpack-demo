@@ -72,3 +72,14 @@
 		package.json에서
 		--save-dev는 devDependencies에 추가: 개발때만 사용, product에서는 빠짐.
 		--save는 dependencies에 추가: all
+
+		
+	• webpack plugin
+		1. css: 
+			css loader: bundle into inline  e.g.: <head><style>.hello{color:red}</style></head>
+			should use ExtractTextWebpackPlugin 
+			npm install --save-dev extract-text-webpack-plugin
+		2. image ... 
+		
+		
+		
